@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="3.0"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ 
+   <!-- To save as "hello\WEB-INF\web.xml" -->
+ 
+   <servlet>
+      <servlet-name>Home</servlet-name>
+      <servlet-class>HomeServlet</servlet-class>
+   </servlet>
+
+   <servlet>
+      <servlet-name>UserQuery</servlet-name>
+      <servlet-class>QueryServlet</servlet-class>
+   </servlet>
+   
+   <servlet>
+      <servlet-name>PlayList</servlet-name>
+      <servlet-class>PlayListServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>Users</servlet-name>
+      <servlet-class>UsersServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>Data</servlet-name>
+      <servlet-class>GetDataServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+      <servlet-name>QB</servlet-name>
+      <servlet-class>QBServlet</servlet-class>
+    </servlet>
+ 
+   <!-- Note: All <servlet> elements MUST be grouped together and
+         placed IN FRONT of the <servlet-mapping> elements -->
+ 
+   <servlet-mapping>
+      <servlet-name>Home</servlet-name>
+      <url-pattern>/home</url-pattern>
+   </servlet-mapping>
+
+   <servlet-mapping>
+    <servlet-name>PlayList</servlet-name>
+    <url-pattern>/playlist</url-pattern>
+  </servlet-mapping>
+   
+  <servlet-mapping>
+    <servlet-name>UserQuery</servlet-name>
+    <url-pattern>/query</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Users</servlet-name>
+    <url-pattern>/users</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Data</servlet-name>
+    <url-pattern>/getdata</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>QB</servlet-name>
+    <url-pattern>/qb</url-pattern>
+  </servlet-mapping>
+
+</web-app>
