@@ -2,7 +2,7 @@ package com.dom
 
 import grails.rest.Resource
 
-@Resource(uri='/books')
+@Resource(uri='/books', formats=['json'])
 class Book {
     String title
 
